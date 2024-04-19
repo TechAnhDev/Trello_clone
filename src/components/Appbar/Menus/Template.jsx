@@ -27,6 +27,7 @@ function Template() {
         aria-expanded={open ? 'true' : undefined}
         onClick={handleClick}
         endIcon={<KeyboardArrowDownIcon />}
+        sx={{ color: 'white' }}
       >
         Template
       </Button>

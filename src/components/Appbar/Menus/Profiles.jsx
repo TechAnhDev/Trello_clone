@@ -7,7 +7,7 @@ import Divider from '@mui/material/Divider';
 
 import ListItemIcon from '@mui/material/ListItemIcon';
 import Tooltip from '@mui/material/Tooltip';
-
+import AvatarImg from '~/assets/wallpaperflare.com_wallpaper (1).jpg';
 import Avatar from '@mui/material/Avatar';
 import IconButton from '@mui/material/IconButton';
 import PersonAdd from '@mui/icons-material/PersonAdd';
@@ -49,7 +49,7 @@ function Profile() {
               height: '35px',
             }}
             alt="Travis Howard"
-            src="/static/images/avatar/2.jpg"
+            src={AvatarImg}
           />
         </IconButton>
       </Tooltip>
