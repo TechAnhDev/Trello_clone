@@ -27,7 +27,7 @@ function AppBar() {
     <Box
       px={2}
       sx={{
-        height: '58px',
+        height: (theme) => theme.trelloCustom.appBarHeight,
         width: '100%',
         display: 'flex',
         alignItems: 'center',

@@ -29,7 +29,7 @@ function BoardBar() {
         width: '100%',
         display: 'flex',
         alignItems: 'center',
-        height: '68px',
+        height: (theme) => theme.trelloCustom.boardBarHeight,
         justifyContent: 'space-between',
         gap: 2,
         overflow: 'auto',
@@ -48,7 +48,6 @@ function BoardBar() {
           startIcon={<PersonAddAlt1Icon />}
           sx={{
             color: 'white',
-            borderColor: 'white',
           }}
         >
           Invite
@@ -56,9 +55,14 @@ function BoardBar() {
         <AvatarGroup
           max={2}
           sx={{
+            gap: '7px',
             '& .MuiAvatar-root': {
               width: '30px',
               height: '30px',
+              fontSize: 16,
+              color: 'white',
+              cursor: 'pointer',
+              '&:first-of-type': { bgcolor: '#a4b0de' },
             },
           }}
         >
